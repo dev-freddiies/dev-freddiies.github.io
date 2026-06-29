@@ -214,6 +214,8 @@
     .cta-box::before{content:'';position:absolute;width:300px;height:300px;background:radial-gradient(circle,rgba(34,211,238,.25),transparent 70%);top:-120px;left:50%;transform:translateX(-50%)}
     .cta-box h2{font-size:clamp(1.8rem,5vw,2.6rem);font-weight:700;position:relative}
     .cta-box p{color:var(--muted);max-width:500px;margin:14px auto 28px;position:relative}
+    .cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
+    button.btn{cursor:pointer;font-family:inherit;font-size:15px}
     footer{margin-top:80px;border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--faint);font-size:14px}
     footer .fs{display:flex;gap:18px;justify-content:center;margin-bottom:14px}
     footer .fs a{width:40px;height:40px;display:grid;place-items:center;border-radius:50%;border:1px solid var(--line);color:var(--muted);transition:.3s}
@@ -255,7 +257,7 @@
       <p class="lede">Data Scientist especializado en <b>pricing dinámico</b>, <b>revenue management</b> y <b>forecasting</b>. Convierto datos complejos en decisiones de negocio con impacto económico medible.</p>
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-layer-group"></i> Ver proyectos</a>
-        <a href="#contact" class="btn btn-ghost"><i class="fa-regular fa-paper-plane"></i> Hablemos</a>
+        <button type="button" class="btn btn-ghost" data-download-cv><i class="fa-solid fa-download"></i> Descargar CV</button>
       </div>
       <div class="hero-social">
         <a href="mailto:alfredo98norba@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
@@ -400,6 +402,30 @@
 
         <div class="proj feat reveal">
           <i class="fa-solid fa-star proj-star"></i>
+          <div class="proj-meta"><span class="proj-cat">Cognodata · AENA</span><span class="when">2025 — Actualidad</span></div>
+          <h3>Pricing dinámico — P.O.T (Precio Óptimo Teórico)</h3>
+          <p>Motor propio de recomendación de precios que convierte elasticidad de demanda, ocupación prevista y precio vigente en una recomendación tarifaria por estancia y producto. Diseñé el flujo P.O.T, la matriz guía y los tramos, y lo automaticé en Python (partiendo de una primera versión conceptual en Excel). Integra un trigger de agotamiento de cupo migrado de R a Python, heatmap de ocupación y análisis de precios de competidores.</p>
+          <div class="res">
+            <span><i class="fa-solid fa-check"></i> +7–15 % de ingresos mensuales en la red de parkings</span>
+            <span><i class="fa-solid fa-check"></i> Decisiones de pricing con trazabilidad y criterio de negocio</span>
+          </div>
+          <div class="stack"><span>Python</span><span>SQL Server</span><span>Elasticidad</span><span>Power BI</span><span>R → Python</span></div>
+        </div>
+
+        <div class="proj feat reveal d1">
+          <i class="fa-solid fa-star proj-star"></i>
+          <div class="proj-meta"><span class="proj-cat">Cognodata · AENA</span><span class="when">2025 — Actualidad</span></div>
+          <h3>Simulador de demanda horaria (Prophet)</h3>
+          <p>Simulador en Python con Prophet para la previsión horaria de operaciones (pickup / return) de valet parking en los aparcamientos de Madrid. Incorpora suelo por reservas conocidas (book-on-the-books) para no predecir por debajo de la demanda ya comprometida, redondeo estocástico y discretización operativa, con auditoría continua del error.</p>
+          <div class="res">
+            <span><i class="fa-solid fa-check"></i> Backtest / walk-forward con MAE, RMSE y sMAPE</span>
+            <span><i class="fa-solid fa-check"></i> Anticipa la carga operativa y mide la fiabilidad del modelo</span>
+          </div>
+          <div class="stack"><span>Python</span><span>Prophet</span><span>Series temporales</span><span>Backtesting</span><span>Forecasting horario</span></div>
+        </div>
+
+        <div class="proj feat reveal d2">
+          <i class="fa-solid fa-star proj-star"></i>
           <div class="proj-meta"><span class="proj-cat">Libro · Divulgación</span><span class="when">2025 — En curso</span></div>
           <h3>"Qué c*s son las redes neuronales"</h3>
           <p>Libro técnico-divulgativo que explica desde cero cómo funcionan las redes neuronales con un enfoque progresivo y entretenido: desde LSTM hasta GRU, TCN y Transformers, con metáforas visuales, código en Python y análisis de resultados reales.</p>
@@ -525,7 +551,10 @@
       <div class="cta-box reveal">
         <h2>¿Construimos algo con <span class="grad-text">impacto</span>?</h2>
         <p>Abierto a oportunidades en data science, pricing, revenue analytics y forecasting. Hablemos.</p>
-        <a href="mailto:alfredo98norba@gmail.com" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> alfredo98norba@gmail.com</a>
+        <div class="cta-actions">
+          <a href="mailto:alfredo98norba@gmail.com" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> alfredo98norba@gmail.com</a>
+          <button type="button" class="btn btn-ghost" data-download-cv><i class="fa-solid fa-download"></i> Descargar CV (PDF)</button>
+        </div>
       </div>
     </div>
     <footer>
@@ -622,6 +651,25 @@
       entries.forEach(e => { if (e.isIntersecting){ e.target.querySelectorAll('.lang-bar i').forEach(b => b.style.width = b.dataset.w); lio.unobserve(e.target); } });
     }, { threshold: 0.3 });
     document.querySelectorAll('#education .panel').forEach(p => lio.observe(p));
+
+    /* ---- Download both CVs ---- */
+    const CV_FILES = [
+      'assets/cv/Alfredo_Talavera_Ramajo_CV_Data_Scientist.pdf',
+      'assets/cv/Alfredo_Talavera_Ramajo_CV_Data_Scientist_Resume.pdf'
+    ];
+    function downloadCVs(){
+      CV_FILES.forEach((file, i) => {
+        setTimeout(() => {
+          const a = document.createElement('a');
+          a.href = file;
+          a.download = file.split('/').pop();
+          document.body.appendChild(a);
+          a.click();
+          a.remove();
+        }, i * 600);
+      });
+    }
+    document.querySelectorAll('[data-download-cv]').forEach(b => b.addEventListener('click', downloadCVs));
   </script>
 </body>
 </html>
