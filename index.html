@@ -1,15 +1,41 @@
-n
- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Alfredo Talavera Ramajo personal website</title>
-  <meta name="description" content="A blog about lorem ipsum dolor sit amet">
+  <title>Alfredo Talavera Ramajo | Data Scientist</title>
+  <meta name="description" content="Data Scientist especializado en pricing, revenue management, product analytics y demand forecasting.">
 
   <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .cv-section { width: 90%; margin: 0 auto; max-width: 960px; padding: 40px 0; }
+    @media only screen and (min-width: 550px) { .cv-section { width: 80%; } }
+    .cv-section h1 { text-align: center; color: #1a222c; border-bottom: 2px solid #1a222c; padding-bottom: 10px; }
+    .cv-section h2 { color: #1a222c; margin-top: 1.5em; font-size: 1.6rem; }
+    .cv-section h3 { color: #333; font-size: 1.2rem; margin-bottom: 0.2em; }
+    .cv-section h4 { color: #555; font-size: 1rem; font-weight: normal; font-style: italic; margin: 0 0 0.5em 0; padding: 0; }
+    .cv-section ul { list-style: disc; padding-left: 20px; }
+    .cv-section ul li { margin-bottom: 8px; color: #555; font-size: 0.95rem; line-height: 1.5; }
+    .cv-section p { font-size: 0.95rem; line-height: 1.6; }
+    .summary-box { background: #f5f7fa; border-left: 4px solid #1a222c; padding: 15px 20px; margin: 20px 0; border-radius: 0 5px 5px 0; }
+    .skills-grid { display: flex; flex-wrap: wrap; gap: 20px; margin: 20px 0; }
+    .skill-card { flex: 1; min-width: 250px; background: #f5f7fa; padding: 15px; border-radius: 8px; }
+    .skill-card h3 { margin-top: 0; padding-top: 0; font-size: 1.1rem; color: #1a222c; }
+    .skill-card p { margin: 5px 0 0; font-size: 0.9rem; }
+    .project-card { background: #f5f7fa; padding: 20px; border-radius: 8px; margin: 15px 0; border-left: 3px solid #4b5664; }
+    .project-card h3 { margin-top: 0; padding-top: 0; }
+    .project-card .project-meta { font-size: 0.85rem; color: #888; margin-bottom: 10px; }
+    .project-card .tech-tags { margin-top: 10px; }
+    .project-card .tech-tags span { display: inline-block; background: #1a222c; color: #fff; padding: 2px 8px; border-radius: 3px; font-size: 0.75rem; margin: 2px; }
+    .edu-item { margin-bottom: 15px; }
+    .edu-item h3 { margin-bottom: 0; padding-top: 0; }
+    .edu-item p { margin: 2px 0; }
+    .cert-list { list-style: none; padding: 0; }
+    .cert-list li { padding: 5px 0; border-bottom: 1px solid #eee; font-size: 0.95rem; }
+    .cert-list li:last-child { border: none; }
+  </style>
 </head>
 
   <body>
@@ -18,207 +44,238 @@ n
       <h1>
         <span class="site-title">Alfredo Talavera Ramajo</span>
         <br></br>
-   
-        <span class="site-description">Data scientist at Criptosasun Energía S.L. | Specialist in AI and Big Data | Team Leader in Neural Networks and FPGA Development</span>
+        <span class="site-description">Data Scientist | Pricing, Forecasting & Product Analytics</span>
       </h1>
       <div class="header-icons">
         <a aria-label="Send email" href="mailto:alfredo98norba@gmail.com"><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="LinkedIn" target="_blank" href="https://www.linkedin.com/in/alfredo-talavera-ramajo-62a0ba139/"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+        <a aria-label="LinkedIn" target="_blank" href="https://www.linkedin.com/in/alfredo-talavera-ramajo"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
         <a aria-label="My Github" target="_blank" href="https://github.com/dev-freddiies"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
       </div>
       <div class="header-links">
-        <a class="link" href="#about" data-scroll>About Me</a>
-       
+        <a class="link" href="#about" data-scroll>Sobre mi</a>
+        <a class="link" href="#experience" data-scroll>Experiencia</a>
+        <a class="link" href="#projects" data-scroll>Proyectos</a>
+        <a class="link" href="#education" data-scroll>Formacion</a>
       </div>
   </div>
   <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </div>
 
-      <section id="about">
-         <div class="user-details">
-  <h1> Who i am  </h1>
-  
-  <p> Hello ! My name is Alfredo, i am from Cáceres, Spain, i have the title of Network Administration of Networked Computer Systems and Specialist in Big Data and Artificial Intelligent <p>
-<p><p>
-  <p> 
+      <!-- ABOUT -->
+      <section id="about" class="cv-section">
+        <h1>Resumen Profesional</h1>
+        <div class="summary-box">
+          <p><strong>Incremente los ingresos de la red de parkings de AENA entre un 7% y un 15% mensual</strong> mediante metodologias de pricing dinamico basadas en elasticidad de demanda, forecasting de ocupacion y sistemas de soporte a la decision.</p>
+          <p>Data Scientist especializado en <strong>pricing, revenue management, product analytics y demand forecasting</strong>. Experiencia construyendo modelos predictivos, analisis de demanda y herramientas analiticas con Python, SQL Server y Power BI para traducir datos complejos en decisiones de negocio con impacto economico medible.</p>
+        </div>
 
-   I am an IT developer passionate about adopting and adapting to new technologies and methodologies. With more than a year of experience in Criptosasun Energía S.L., I have led and collaborated in innovative projects in artificial intelligence, data analysis and FPGA application development. My proactivity and ability to anticipate needs have allowed me to constantly face and overcome challenges.
-<p><p>
-In my current role, I developed and implemented a neural network that identifies the optimal time to make strategic decisions, which resulted in a significant maximization of project profits. In addition, I led the creation of a comprehensive and robust database, using Excel and Python, that analyzes external and internal factors critical to the project. Subsequently, I optimized the network with Matlab applying advanced reinforced learning techniques, achieving substantial improvements in accuracy and efficiency.
-<p><p>
-I am constantly looking for opportunities to grow and add value, with a strong interest in AI development in any area. My ambition is to reach leadership roles as CTO in the future or any position of responsibility. I am passionate about transforming ideas into practical solutions with detail and precision, always looking to continuously learn and improve.
-<p><p>
-I have led a team, overseeing the division of labor and ensuring the successful completion of key projects. I developed applications on FPGA, improving hardware performance by 25%. I managed and exploited large volumes of data to generate valuable insights and improve decision making. 
-<p><p>
-In addition, I collaborated closely with other departments to integrate advanced technological solutions and optimize operational processes. I have participated in meetings with other companies and high-level executives to establish funding and collaboration agreements. I have also attended talent search events and funding events, expanding the network of contacts and opportunities for the company.
-<p><p>
-**Main technical skills:** Python, Reinforcement Learning, Big Data Analytics, Project Management, Blockchain, Artificial Intelligence, Networking, FPGA.
-<p><p>
-**Key soft skills:** Communication, Leadership, Time management, Good social skills, Problem solving, Ambition, Taking responsibility to scale professionally.
-   
-  </p>
-</div>
-  <div class="user">
-    <div class="tech">
-      <h2>Network Administration </h2>
-      <i class="devicon-mysql-plain-wordmark colored"></i>
-      <i class="devicon-linux-plain colored"></i>
-      <i class="devicon-windows8-original colored"></i>
-      <p> LDAP  ·  Active Directory  ·  MySQL  ·  Windows Server  ·  Network security </p>
-      <p> ·  Virtualization in VirtualBox  ·  Scripting in Linux and Windows  ·  PHP  ·  CSS </p>
-    </div>
-    <div class="tech">
-      <h2>Big Data and AI</h2>
-      <i class="devicon-java-plain colored"></i>
-      <i class="devicon-python-plain colored"></i>
-      <i class="devicon-mongodb-plain-wordmark colored"></i>
-      <p> JAVA  ·  Python  ·  Cassandra  ·  MongoDB  ·  HIVE  ·  Machine Learning  ·  Expert systems ·  </p>
-      <p> MariaDB  ·  Microsoft Azure  ·  R  ·  Tableau  ·  Power BI  ·  Blockchain  ·  Spark  ·  Hadoop ·  Ganglia · </p>
- 
-   </div>
-    <div  class="tech">
-      <h2>Additional</h2>
-      <i class="devicon-javascript-plain colored"></i>
-      <i class="devicon-react-original-wordmark colored"></i>
-      <i class="devicon-photoshop-plain colored"></i>
-      <p> React.js  ·  JavaScript  ·  Adobe Photoshop / Premiere / Ilustrator  ·  Car license </p>
-    </div>
-</div>
-
+        <h2>Competencias Tecnicas</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Pricing & Revenue</h3>
+            <p>Pricing dinamico &middot; Elasticidad de demanda &middot; Revenue management &middot; Analisis de escenarios &middot; Benchmarking competitivo &middot; DSS</p>
+          </div>
+          <div class="skill-card">
+            <h3>Forecasting & ML</h3>
+            <p>Demand forecasting &middot; Series temporales &middot; Prophet &middot; LSTM &middot; scikit-learn &middot; TensorFlow &middot; PyTorch &middot; Optuna &middot; Feature engineering &middot; Reinforcement Learning</p>
+          </div>
+          <div class="skill-card">
+            <h3>Data & Business Intelligence</h3>
+            <p>Python (pandas, NumPy) &middot; SQL Server &middot; T-SQL &middot; Power BI &middot; DAX &middot; Tableau &middot; ETL &middot; PostgreSQL &middot; Docker &middot; Git/GitHub</p>
+          </div>
+        </div>
       </section>
- 
- 
-  <section id="work-experience">
-        <div class="user-details">
-  <h1> Work experience </h1>
 
-</div>
-   
- <div align=center>
-    <h3> Criptosasun energía </h3>
-     <br></br>
+      <!-- EXPERIENCE -->
+      <section id="experience" class="cv-section">
+        <h1>Experiencia Profesional</h1>
 
-       <h4><li> Data scientist </li></h4>
-       <li> 2022 - currently | Badajoz </li>
+        <h2>COGNODATA (Proyecto AENA)</h2>
+        <h4>Data Scientist | Pricing & Revenue Analytics &middot; Jul 2025 &ndash; Actualidad &middot; Presencial, Madrid</h4>
+        <ul>
+          <li>Incremente los ingresos de la red de parkings de AENA entre un 7% y un 15% mensual implantando una metodologia propia de pricing dinamico (Precio Optimo Teorico) basada en elasticidad de demanda, prevision de ocupacion y ritmo de agotamiento de cupo.</li>
+          <li>Evolucione el sistema de recomendacion tarifaria existente, complementando el simulador de agotamiento en R con nuevas soluciones en Python que incorporan elasticidad estimada, ocupacion prevista y precio vigente por producto y tipo de estancia, alimentando el reporting ejecutivo en Power BI.</li>
+          <li>Amplie el horizonte de prevision operativa a 90 dias construyendo modelos de demand forecasting con Prophet para ocupacion, reservas y demanda de valet parking, incorporando validacion de errores y seguimiento de precision.</li>
+          <li>Aporte soporte analitico cuantitativo a decisiones de pricing mediante estudios de elasticidad de demanda, escenarios de ocupacion, analisis de capacidad y benchmarking de competidores.</li>
+        </ul>
 
-          <p> - Implemented a neural network to learn the most optimal time to make decisions, maximizing project profits.
-        <p><p>
-           - I led the creation of a robust and large database by mining and analyzing data with external and internal factors, using Excel and Python.
-         <p><p>
-           - I optimized the neural network with Matlab and reinforced learning techniques.
-          <p><p>
-           - I led a team of 5 people, overseeing the division of labor and ensuring successful completion of key projects.
-           <p><p>
-           - Developed applications on FPGA, improving hardware performance by 25%.
-            <p><p>
-           - Managed and exploited large volumes of data to generate valuable insights and improve decision making.
-             <p><p>
-           - I collaborated closely with other departments to integrate advanced technological solutions and optimize operational processes.
-              <p><p>
-           - Participated in meetings with other companies and senior management for funding and collaboration agreements.
-           artificial intelligence - FPGA 
-               <p><p>
-                - I attended talent search events and funding events, expanding the network of contacts and opportunities for the company.
-                    <p><p>
-         <p>
-       <i class="devicon-androidstudio-original-wordmark-plain colored"></i>
+        <h2>IDENER.AI</h2>
+        <h4>Data Scientist &middot; Feb 2025 &ndash; Jun 2025 &middot; Remoto &middot; Proyecto de consultoria de duracion definida</h4>
+        <ul>
+          <li>Reduje procesos manuales de ingesta y preparacion de datos construyendo pipelines ETL automatizados que integraron variables climaticas y datos de generacion multi-pais para modelos predictivos de precios del mercado electrico (OMIE).</li>
+          <li>Optimice la planificacion de inventario de una empresa de recambios de automocion construyendo modelos de demand forecasting que combinan regresion, clasificacion y Naive Bayes con feature engineering sobre variables categoricas, reduciendo el desfase entre entrada y salida de stock.</li>
+        </ul>
 
-   </div>
- 
- 
-      <section id="projects">
-        <div class="user-details">
-  <h1> Featured Projects </h1>
-</div>
-          
-<div align=center>
-    <h3> Projects </h3>
-     <br></br>
-
-    <li> Degree's final project </li>
-    <p>The project was based on creating a virtual box network which contained 3 machines that acted as clients, one on Ubuntu 18.04 and one on Windows 10 There were also 3 machines that acted as servers, an SMTP server that also managed users through LDAP and DHCP, there was also a MySQL server which emulated as if an employee had to connect from a client machine I also had an FTP server which I served as file transfer for the entire network It also had two firewalls configured with apache and the rules Spyder owasp, and apache, they were also configured through the use of iptables And also two honeypots, one based on Ubuntu 18.04 and the other on Kali Linux</p>
-    <br></br>
-
-   
-   
-    <li> Project Software engineering </li>
-    <p> A project that the idea was to manage some objects (in this case they were fictitious hydroalcoholic gel cans) programmed in c ++ and manage them as if they were in the entire faculty It was all in c ++ to practice object-oriented programming in c ++ with eclipse </p>
-    <br></br>
-
- 
-   
-    <li> Project 2 with Microsoft Azure Chatbot with LUIS </li>
-    <p>LUIS is a cloud-based conversational artificial intelligence service that applies personalized machine learning intelligence to a user's natural language text or conversation to predict global meaning and extract relevant and detailed information. The idea and objective of the project is through the design of a chatbot in python and the use of the tools provided by Azure, so that the user can converse and obtain a response from the system itself.  </p>
-    <br></br>
-
-
- 
-   <li> Project 1 with Microsoft Azure, Project Faces </li>
-   <p> The first project with Microsoft Azure is based on using the face detection tool using python functions: Creation of a group element, Assignment of faces to person objects, Training of the PersonGroup element (Once the faces are assigned, you must train the group object so that it identifies the visual characteristics associated with each of its person objects), Output of identified face IDs, We create a list to store several photos, it detects the face of several images and returns us some parameters, It verifies if the faces are of the same person or if the faces are from a different person, we also create a rectangle that is placed where a face has been detected. </p>
-   <br></br>
-
-
-
-   <li> Data analysis work in Power B </li>
-   <p> The project consisted of analyzing the data provided in a .csv and creating different graphs to analyze the data as if we were a company that has to bring a new product to the market, and, to analyze the competition, we have data from a market study in a .csv, and through the study of graphs, see if it would be viable or not, and what characteristics we can improve </p>
-   <br></br>
-
-
-
-   <li> Blockchain creation project with Python </li>
-   <p> It is about the creation of a Blockchain in Python which we are going to develop an application that allows users to share information through a blockchain. We developed a small interface for use using the Flask microframework.
-        The steps would be: Storing the transactions in blocks, Adding the fingerprints, Chaining the blocks, Implementing a proof-of-work algorithm, Adding blocks to the chain, Creating the interfaces, Establishing consensus and decentralization
-        We would like to prevent any kind of tampering with the information stored within a block. To detect if the information in a block has been tampered with, we can use cryptographic hash functions.
-        We are going to use the same Hash encryption that Bitcoin uses, SHA-256, to create the signature of the blocks
-        And with Flask we create the interface in HTML </p>
-   <br></br>
-
-
-
-   <li> Cluster monitoring </li>
-   <p> The idea of the project is to create a network in virtualbox in which there is the master node and two slave nodes in which through the monitoring of Ganglia, whose utility is to monitor what is happening in the cluster
-       The network configuration is first to ping between the machines, then use hdfs, hadoop, hive, flume and the ganglia itself that have previously been installed and configured
-       And when everything is ready, analyze the consumption of RAM, network, CPU... Of the nodes while we execute different programs that we have previously created </p>
-   <br></br>
-
-</div>
- 
-  
- 
-</div>
-
-  <div align=center>
-    <h3> Hobbies </h3>
-    <p>I have participated in #100DaysOfCode, I have developed projects for network administration purposes. Designing my personal brand, as well as interested in photography.</p>
-    <br></br>
-
-    <li> Carrying out my personal brand </li>
-    <p> With the help of my creativity, ambition and desire to grow, in my free time I develop a personal brand through my own designs. </p>
-</div>
-
+        <h2>CRIPTOSASUN ENERGIA S.L.</h2>
+        <h4>Data Scientist &middot; Oct 2022 &ndash; Sep 2024 &middot; Remoto</h4>
+        <ul>
+          <li>Reduje la incertidumbre en la planificacion energetica construyendo el sistema de forecasting del precio del MWh (OMIE) mediante modelos de series temporales y deep learning (LSTM) que integraron variables climaticas y de generacion de multiples fuentes.</li>
+          <li>Centralice el seguimiento de KPIs de consumo, produccion e ingresos energeticos automatizando la ingesta de datos y construyendo dashboards en Power BI y Tableau, eliminando el reporting manual del equipo.</li>
+          <li>Prototipe un agente de reinforcement learning para evaluar estrategias de optimizacion energetica y explorar su viabilidad como capa de automatizacion en decisiones operativas.</li>
+        </ul>
       </section>
-        
+
+      <!-- PROJECTS -->
+      <section id="projects" class="cv-section">
+        <h1>Proyectos Destacados</h1>
+
+        <div class="project-card">
+          <h3>Libro &mdash; Que c*s son las redes neuronales</h3>
+          <p class="project-meta">Proyecto personal &middot; Feb 2025 &ndash; Actualidad (en curso)</p>
+          <p>Libro tecnico-divulgativo que explica desde cero como funcionan las redes neuronales, con un enfoque progresivo, claro y entretenido. Cubre desde los fundamentos de las redes LSTM hasta modelos mas avanzados como GRU, TCN y Transformers, utilizando metaforas visuales, explicaciones practicas, fragmentos de codigo en Python y analisis de resultados reales. Incluye glosario y buenas practicas de entrenamiento para proyectos reales.</p>
+          <div class="tech-tags">
+            <span>LSTM</span><span>GRU</span><span>TCN</span><span>Transformers</span><span>Python</span><span>Deep Learning</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>DRRISE &mdash; Prediccion del Precio del Mercado Energetico Spot y PVPC</h3>
+          <p class="project-meta">IDENER.AI &middot; Feb 2025 &ndash; Jun 2025</p>
+          <p>Prediccion del precio horario de la energia electrica en el mercado espanol (OMIE y PVPC) utilizando modelos avanzados de series temporales. Lidere el diseno y entrenamiento de modelos LSTM univariantes y multivariantes, optimizados con Optuna. Implemente variantes con atencion y explore arquitecturas basadas en Transformers y Temporal Fusion Transformer (TFT).</p>
+          <ul>
+            <li>Modelos con precision horaria R2 &asymp; 0.90</li>
+            <li>Automatizacion completa del flujo de entrenamiento e inferencia</li>
+            <li>Predicciones robustas sin interpolacion artificial</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Python</span><span>TensorFlow</span><span>Keras</span><span>PyTorch</span><span>Optuna</span><span>PyTorch Lightning</span><span>Power BI</span><span>ESIOS API</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>DiCiM &mdash; Prediccion de Demanda y Optimizacion de Inventario (Sector Automotriz)</h3>
+          <p class="project-meta">IDENER.AI &middot; Feb 2025 &ndash; Jun 2025</p>
+          <p>Proyecto europeo centrado en la gestion inteligente de la demanda de repuestos en la industria automotriz. Disene, entrene y compare modelos avanzados para prediccion de demanda intermitente: GRNNs, ADIDA, Croston Classic/SBA, IMAPA, TSB y modelos probabilisticos bayesianos. Pipelines modulares con validacion secuencial y buenas practicas de ingenieria de software (SOLID, DRY).</p>
+          <ul>
+            <li>Reduccion del MAE frente a metodos clasicos</li>
+            <li>Automatizacion de entrenamiento y seleccion de modelos optimos</li>
+            <li>Evaluacion diaria y mensual con enfoque multihorizonte</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Python</span><span>TensorFlow</span><span>scikit-learn</span><span>Optuna</span><span>PyTorch</span><span>Bayesian Inference</span><span>Power BI</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>KiWiH &mdash; Plataforma Inteligente de Interaccion con el Mercado Electrico</h3>
+          <p class="project-meta">Criptosasun Energia S.L. &middot; Oct 2022 &ndash; Sep 2024</p>
+          <p>Proxy inteligente del mercado electrico que permite a minoristas y consumidores automatizar su participacion en el mercado energetico. Desarrolle modelos de IA basados en aprendizaje reforzado (DQN, Double DQN) para simular escenarios de negociacion energetica. Disene pipelines ETL para ingestion continua de datos meteorologicos, precios OMIE y senales de mercado. Colabore en la implementacion en FPGA (Vivado, Vitis AI) para inferencias en edge computing.</p>
+          <div class="tech-tags">
+            <span>Python</span><span>TensorFlow</span><span>MATLAB</span><span>OpenAI Gym</span><span>Power BI</span><span>Tableau</span><span>PostgreSQL</span><span>Docker</span><span>Vivado</span><span>Vitis AI</span><span>MLOps</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Bateria Virtual (VMB) &mdash; Optimizacion Energetica Industrial</h3>
+          <p class="project-meta">Criptosasun Energia S.L. &middot; Oct 2022 &ndash; Sep 2024</p>
+          <p>Sistema inteligente que simula almacenamiento energetico sin hardware fisico mediante gemelos digitales que interactuan con el mercado spot electrico. Lidere el desarrollo de modelos de Aprendizaje Reforzado (DQN, Double DQN) para decisiones de compra, venta o almacenamiento de energia. Implemente pipelines automatizados para ingestion diaria de datos historicos y en tiempo real.</p>
+          <ul>
+            <li>Reduccion del coste energetico simulado mediante decisiones optimas de almacenamiento virtual</li>
+            <li>Integracion completa de gemelos digitales con modelos RL en produccion experimental</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Python</span><span>TensorFlow</span><span>OpenAI Gym</span><span>Tableau</span><span>Power BI</span><span>PostgreSQL</span><span>MATLAB</span><span>Docker</span><span>Optuna</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Blockchain con Python</h3>
+          <p class="project-meta">IES Agora &middot; Abr 2022 &ndash; May 2022</p>
+          <p>Aplicacion en Python que permite compartir informacion a traves de una blockchain. Implementacion con Flask incluyendo almacenamiento de transacciones, huellas digitales, encadenado de bloques, algoritmos de prueba de trabajo y cifrado SHA-256.</p>
+          <div class="tech-tags">
+            <span>Python</span><span>Flask</span><span>Blockchain</span><span>SHA-256</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Monitorizacion de Clusteres</h3>
+          <p class="project-meta">IES Agora &middot; May 2022</p>
+          <p>Creacion de una red en VirtualBox con nodo maestro y dos nodos esclavos. Monitorizacion con Ganglia, analisis de consumo de RAM, CPU y red durante la ejecucion de programas distribuidos.</p>
+          <div class="tech-tags">
+            <span>HDFS</span><span>Hadoop</span><span>Hive</span><span>Flume</span><span>Ganglia</span><span>VirtualBox</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Analisis de Datos en Power BI</h3>
+          <p class="project-meta">IES Agora &middot; May 2022</p>
+          <p>Analisis de datos en formato .csv para simular un estudio de mercado y determinar la viabilidad de lanzar un nuevo producto, examinando la competencia y las caracteristicas a mejorar.</p>
+          <div class="tech-tags">
+            <span>Power BI</span><span>CSV</span><span>Analisis de mercado</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Chatbot con Microsoft Azure y LUIS</h3>
+          <p class="project-meta">IES Agora &middot; Mar 2022</p>
+          <p>Chatbot utilizando Microsoft Azure y el servicio LUIS para interactuar con usuarios, entender consultas en lenguaje natural y ofrecer respuestas relevantes mediante integracion con APIs.</p>
+          <div class="tech-tags">
+            <span>Microsoft Azure</span><span>LUIS</span><span>Python</span><span>NLP</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Deteccion Facial con Microsoft Azure</h3>
+          <p class="project-meta">IES Agora &middot; Ene 2022 &ndash; Mar 2022</p>
+          <p>Herramienta de deteccion facial con Microsoft Azure y Python. Implementacion de PersonGroup para identificar y almacenar caracteristicas visuales de rostros con verificacion de consistencia.</p>
+          <div class="tech-tags">
+            <span>Microsoft Azure</span><span>Python</span><span>Computer Vision</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>100DaysOfCode</h3>
+          <p class="project-meta">Jul 2020 &ndash; Sep 2020</p>
+          <p>Participacion en el desafio 100 Days of Code, programando diariamente durante 100 dias para mejorar habilidades en Java y desarrollar disciplina de codificacion constante.</p>
+          <div class="tech-tags">
+            <span>Java</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Trabajo de Fin de Ciclo Superior (ASIR)</h3>
+          <p class="project-meta">IES Agora &middot; Mar 2019 &ndash; May 2019</p>
+          <p>Red en VirtualBox con tres maquinas cliente y tres servidoras: servidor SMTP con LDAP y DHCP, servidor MySQL y servidor FTP. Dos firewalls con Apache y reglas OWASP, y dos honeypots (Ubuntu 18.04 y Kali Linux) para deteccion de intrusiones.</p>
+          <div class="tech-tags">
+            <span>VirtualBox</span><span>LDAP</span><span>DHCP</span><span>MySQL</span><span>FTP</span><span>Apache</span><span>Kali Linux</span><span>Honeypots</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="cv-section">
+        <h1>Formacion Academica</h1>
+
+        <div class="edu-item">
+          <h3>Grado en Ingenieria Informatica Software</h3>
+          <p>Universidad Internacional de La Rioja (UNIR) &middot; 2023 &ndash; 2027 &middot; En curso, compatibilizado con actividad profesional</p>
+        </div>
+
+        <div class="edu-item">
+          <h3>Especializacion en Inteligencia Artificial y Big Data</h3>
+          <p>IES Agora &middot; 2021 &ndash; 2022</p>
+        </div>
+
+        <div class="edu-item">
+          <h3>Administracion de Sistemas Informaticos en Red (ASIR)</h3>
+          <p>IES Agora &middot; 2017 &ndash; 2020</p>
+        </div>
+
+        <h2>Idiomas y Certificaciones</h2>
+        <ul class="cert-list">
+          <li><strong>Ingles</strong> &mdash; Professional working proficiency (B2)</li>
+          <li>Mode SQL Certificate &mdash; 2025</li>
+          <li>DP-900 Microsoft Azure Data Fundamentals &mdash; en curso</li>
+          <li>PCAP Python &mdash; en curso</li>
+        </ul>
+      </section>
+
       <footer class="footer">
-    <p>&copy; Anon Developer</p>
-    <p>Build with Jekyll and <span class="love">❤</span> by <a href="https://github.com/nrandecker">Nathan Randecker</a></p>
+    <p>&copy; Alfredo Talavera Ramajo 2025</p>
 </footer>
 <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="/assets/js/sweet-scroll.min.js"></script>
 <script src="/assets/js/main.js"></script>
-<!-- Google Analytics -->
-
-<script>
-var dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-if (dnt != "1" && dnt != "yes") {
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-ga('create', '', 'auto');
-ga('send', 'pageview');
-}
-</script>
-
-
 
   </body>
+</html>
